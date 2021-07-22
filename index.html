@@ -7,13 +7,13 @@
         <a-scene embedded arjs>
         <a-marker preset="hiro">
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-             <a-animation 
+            
 		<a-gltf-model 
 	    src="src: url(./Bee.glb)"
             scale="0.1 0.1 0.1"
-		  attribute="rotation" dur="7000" to="0 360 0" easing="linear" repeat="indefinite">
-       </a-gltf-model>
+		   <a-animation attribute="rotation" dur="7000" to="0 360 0" easing="linear" repeat="indefinite">
 		</a-animation>
+       </a-gltf-model>
           
         </a-marker>
         <a-entity camera></a-entity>
