@@ -7,11 +7,11 @@
         <a-scene embedded arjs>
         <a-marker preset="hiro">
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-            <a-entity
-            position="0 -1 0"
-            scale="0.05 0.05 0.05"
-            <a-obj-model src="./Moes_Tavern.obj" ></a-obj-model>
-            ></a-entity>
+           <a-obj-model 
+            src="./Moes_Tavern.obj"
+            position="0 0 0"
+            scale="1 1 1">
+            </a-obj-model>
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
