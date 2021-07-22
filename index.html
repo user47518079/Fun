@@ -9,7 +9,9 @@
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-gltf-model 
 	    src="src: url(./Bee.glb)"
-            scale="0.01 0.01 0.01">
+            scale="0.2 0.2 0.2"
+		   <a-animation attribute="rotation" dur="7000" to="0 360 0" easing="linear" repeat="indefinite">
+          </a-animation>
        </a-gltf-model>
           
         </a-marker>
