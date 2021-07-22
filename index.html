@@ -11,9 +11,11 @@
 		<a-gltf-model 
 	    src="src: url(./mCbcity.glb)"
            		position="-1.5 -1.5 -1.5"
-			      scale="0.15 0.15 0.15">
-		<a-text id="TreeText" value="In Memory of a Tree" align="center" color="blue" visible="true" scale="0.1 0.1 0.1" position="0.01 0 0" ></a-text>
+			      scale="0.15 0.15 0.15"
+			      animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
        </a-gltf-model>
+		
+		<a-text id="TreeText" value="In Memory of a Tree" align="center" color="blue" visible="true" scale="0.1 0.1 0.1" position="0.01 0 0" ></a-text>
           
         </a-marker>
         <a-entity camera></a-entity>
