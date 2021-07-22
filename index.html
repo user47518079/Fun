@@ -3,6 +3,7 @@
     <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
     <!-- we import arjs version without NFT but with marker + location based support -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+	<script src="https://rawgit.com/blairmacintyre/aframe-look-at-billboard-component/master/dist/aframe-look-at-billboard-component.min.js"></script>
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
         <!--<a-marker preset="hiro"> -->
@@ -12,14 +13,15 @@
 		<a-gltf-model 
 	    src="src: url(./mCbcity90.glb)"
            		position="0 0 0"
+			      billboard 
 			      scale="0.15 0.15 0.15"
 			      animation="property: rotation; to: 0 0 360; loop: true; dur: 10000">
        </a-gltf-model>
 		
-		<a-text id="TreeText" value="In Memory of a Tree" align="center" color="blue" visible="true" scale="0.1 0.1 0.1" position="0.01 0 0" ></a-text>
+		<!-- <a-text id="TreeText" value="In Memory of a Tree" align="center" color="blue" visible="true" scale="0.1 0.1 0.1" position="0.01 0 0" ></a-text> -->
           
         </a-marker>
-        <a-entity camera></a-entity>
+        <a-entity look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1'  camera></a-entity>
         </a-scene>
     </body>
 </html>
