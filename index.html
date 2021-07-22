@@ -6,13 +6,12 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
         <a-marker preset="hiro">
-            <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
+            <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server  animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" -->
             
 		<a-gltf-model 
 	    src="src: url(./Cbcity.glb)"
-           		position="0 -10 0"
-			      scale="0.05 0.05 0.05"
-		   animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+           		position="0 -5 0"
+			      scale="0.005 0.005 0.005">
 		<a-text id="TreeText" value="In Memory of a Tree" align="center" color="blue" visible="true" scale="0.1 0.1 0.1" position="0.01 0 0" ></a-text>
        </a-gltf-model>
           
